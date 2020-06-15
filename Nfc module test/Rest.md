@@ -1,19 +1,19 @@
 # REST 통신
 
-1. REST 서버와 React Native 어플간 통신
+## 1. REST 서버와 React Native 어플간 통신
 : https://velog.io/@johnque/React-API-%EC%97%B0%EB%8F%99-v9k692txn5
 
-2. flask REST서버 구축
+## 2. flask REST서버 구축
 : https://medium.com/@feedbotstar/python-flask-%EB%A1%9C-%EA%B0%84%EB%8B%A8%ED%95%9C-rest-api-%EC%9E%91%EC%84%B1%ED%95%98%EA%B8%B0-60a29a9ebd8c
 
-3. python 가상환경 설정(virtualenv, venv, conda...) 
+## 3. python 가상환경 설정(virtualenv, venv, conda...) 
 : 각각의 가상환경 관리 패키지를 사용하는 건 좋은데, 반드시 사용하고 deactivate를 해줘야한다.
 (패키지별로 방법은 다름)
 - virtualenv : https://dgkim5360.tistory.com/entry/python-virtualenv-on-linux-ubuntu-and-windows
 - venv : http://blog.naver.com/PostView.nhn?blogId=gracehappyworld&logNo=221490620526&parentCategoryNo=&categoryNo=17&viewDate=&isShowPopularPosts=true&from=search
 - conda : 
 
-4. 다중처리
+## 4. 다중처리
 
 ##### 파이썬
 <p>
@@ -28,11 +28,11 @@
 <p>
 	특정 코드를 콜백메서드,프로미스 객체, setTimer, setInterrupt 등의 방식을 사용하면 비동기 큐에 특정작업처리가 등록되고, 원하는 값이 도달 한 이후에 이벤트루프에서 특정 작업이 실행된다. async나 await은 위의 방법에 대한 문법적인 포장일 뿐이다. 이러한 방식으로 비동기 처리가 가능하지만, 결정적으로 이벤트루프 조차도 싱글쓰레드로 돌아간다. 그러므로 연산이 복잡한 작업이 비동기큐에 쌓이면 병목현상이 이벤트루프상에서 발생한다. 그러므로 비동기 처리는 간단한 연산수행을 목표로 해야한다. 그러므로 NODE를 사용하여 서버를 구현한다면 이두가지는 피해야한다.
 </p>
-	1. 대용량 데이터를 통신하는 방식
+	1. 대용량 데이터를 통신하는 방식<br/>
 	2. 복잡한 연산을 비동기처리로 해야하는경우
 
 
-5. 예제 코드
+## 5. 예제 코드
 ```javascript
 import React , {Component} from "react";
 import {View, Text, StyleSheet,Button} from "react-native";
