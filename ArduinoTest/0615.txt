@@ -1,0 +1,33 @@
+1. 라즈베리파이 블루투스 사용하기
+
+두링크는 비슷한 내용
+https://fishpoint.tistory.com/3430
+http://www.hardcopyworld.com/ngine/aduino/index.php/archives/3126
+
+안될때
+https://m.blog.naver.com/PostView.nhn?blogId=juke45ef&logNo=220827583111&proxyReferer=https:%2F%2Fwww.google.com%2F
+-> 기본적으로 파이썬 3이다.
+
+
+2. 아두이노 블루투스 사용하기
+	교과서 참조(특별한 건 없음.)
+```c
+void setup() 
+{
+  Serial.begin(9600);
+  Serial1.begin(9600);
+}
+
+void loop()
+{
+  if(Serial1.available())
+  {
+    Serial.write(Serial1.read());
+  }
+  if(Serial.available())
+  {
+    //char * a = ;
+    Serial1.write(Serial.read());
+  }
+}
+```
